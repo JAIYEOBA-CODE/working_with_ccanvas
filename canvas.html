@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="tt"></div>
+    <script>
+        let canvas = document.getElementById('canvas');
+
+        let cxa = canvas.getContext('2d');
+        canvas.width = 300
+        canvas.height = 500
+        cxa.fillStyle = "#" + (Math.random() * 0XFFFFFF << 0).toString(16);
+        cxa.fillRect(30, 20, 100, 100);
+        cxa.fillStyle = 'green'
+        cxa.fillRect(30, 300, 100, 100);
+        cxa.lineWidth = 10;
+        cxa.strokeStyle = "red";
+        cxa.strokeRect(10, 200, 100, 100)
+
+        cxa.moveTo(10, 100);
+        cxa.lineTo
+        document.getElementById('tt').innerHTML = cxa.fillStyle;
+    </script>
+</body>
+
+</html>
